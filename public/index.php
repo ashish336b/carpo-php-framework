@@ -14,9 +14,16 @@ App::on("AFTER", function () {
    /* For Code to run after response If needed */
 });
 App::get("/", function (Request $request, Response $response) {
-   echo "welcome to simple closure based framework";
+   $welcome = <<<string
+   <style>
+   h1 {
+      color: green;
+      text-align: center;
+   }
+   </style>
+   <h1>Welcome to simple closure based framework</h1>
+   string;
+   echo $welcome;
+   return;
 });
 App::run();
-
-   //test urls
-   // http://localhost:1212/admin/profile/pid/hello/userid/one/two/three/ok/hello/next

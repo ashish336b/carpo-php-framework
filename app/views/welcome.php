@@ -1,10 +1,13 @@
+<?php $title = "MVC Framework" ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>MVC</title>
+   <title>
+      <?php echo $title ?>
+   </title>
    <style>
       h1 {
          color: green;
@@ -12,7 +15,7 @@
       }
    </style>
 </head>
-<h1>MVC Framework <?php echo $ok ?></h1>
+<h1><?php echo $title ?></h1>
 
 <body>
 
