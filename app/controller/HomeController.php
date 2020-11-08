@@ -12,8 +12,4 @@ class AdminController
       $request->url = $request->getUrl();
       return $response->toJSON($request);
    }
-   public function user(Request $request, Response $response)
-   {
-      echo $response->render("/admin", ['ok' => $request->fullURL]);
-   }
 }
