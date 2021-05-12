@@ -10,6 +10,6 @@ class Auth extends Model
    protected $table = "user";
    public function fetchUser()
    {
-      return $this->query("select * from user")->results();
+      return $this->query("select * from users")->results();
    }
 }
